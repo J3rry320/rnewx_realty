@@ -6,6 +6,14 @@
     @apply border-brand-sand/60;
   }
 
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+  }
+
+  :root[data-theme="light"] {
+    color-scheme: light;
+  }
+
   body {
     @apply bg-background text-brand-accent antialiased;
     font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
@@ -47,6 +55,14 @@
   }
   .animate-stagger > *:nth-child(5) {
     animation-delay: 0.36s;
+  }
+
+  .glass {
+    @apply border border-brand-sand/60 bg-brand-surface/70 backdrop-blur-xl;
+  }
+
+  .glass-strong {
+    @apply border border-brand-sand/60 bg-brand-surface-strong/70 backdrop-blur-xl;
   }
 }
 

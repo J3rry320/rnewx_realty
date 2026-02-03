@@ -12,6 +12,34 @@
   --brand-accent: #cfd7e3;
 }
 
+:root[data-theme="dark"] {
+  --brand-ink: #0f1216;
+  --brand-muted: #7f8792;
+  --brand-sand: #1a1f26;
+  --brand-cream: #0b0f13;
+  --brand-terracotta: #c18664;
+  --brand-cypress: #1f3a3a;
+  --brand-sky: #23313f;
+  --brand-gold: #d1b17a;
+  --brand-surface: #11161c;
+  --brand-surface-strong: #171d24;
+  --brand-accent: #cfd7e3;
+}
+
+:root[data-theme="light"] {
+  --brand-ink: #13161b;
+  --brand-muted: #5a6470;
+  --brand-sand: #e2e6ec;
+  --brand-cream: #f6f3ee;
+  --brand-terracotta: #b77658;
+  --brand-cypress: #274242;
+  --brand-sky: #dbe3ea;
+  --brand-gold: #c7a86b;
+  --brand-surface: #ffffff;
+  --brand-surface-strong: #eef1f5;
+  --brand-accent: #1a2129;
+}
+
 @theme inline {
   --color-background: var(--brand-cream);
   --color-foreground: var(--brand-accent);
@@ -31,7 +59,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme]) {
     --brand-ink: #13161b;
     --brand-muted: #5a6470;
     --brand-sand: #e2e6ec;

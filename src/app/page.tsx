@@ -1,3 +1,5 @@
+import ThemeToggle from "./components/ThemeToggle";
+
 const bentoHighlights = [
   {
     title: "Verified Build Partners",
@@ -107,34 +109,39 @@ export default function Home() {
         <div className="absolute -right-10 top-24 h-72 w-72 rounded-full bg-brand-sky/70 blur-3xl" />
         <div className="absolute -left-10 bottom-10 h-64 w-64 rounded-full bg-brand-cypress/60 blur-3xl" />
 
-        <header className="relative z-10 mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-terracotta text-brand-cream font-semibold">
-              R
+        <div className="sticky top-0 z-50 border-b border-brand-sand/60 bg-brand-surface/70 backdrop-blur-xl">
+          <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-terracotta text-brand-cream font-semibold">
+                R
+              </div>
+              <div>
+                <p className="text-lg font-semibold tracking-wide">Rnewx Realty</p>
+                <p className="text-sm text-brand-muted">Trust-first development</p>
+              </div>
             </div>
-            <div>
-              <p className="text-lg font-semibold tracking-wide">Rnewx Realty</p>
-              <p className="text-sm text-brand-muted">Trust-first development</p>
+            <div className="flex items-center gap-4">
+              <nav className="hidden items-center gap-6 text-sm font-medium text-brand-muted md:flex">
+                <a className="transition text-brand-accent" href="#services">
+                  Services
+                </a>
+                <a className="transition hover:text-brand-accent" href="#bento">
+                  Trust
+                </a>
+                <a className="transition hover:text-brand-accent" href="#listings">
+                  Portfolio
+                </a>
+                <a className="transition hover:text-brand-accent" href="#contact">
+                  Contact
+                </a>
+              </nav>
+              <ThemeToggle />
+              <button className="rounded-full bg-brand-gold px-5 py-2 text-sm font-semibold text-brand-ink shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+                Schedule a Call
+              </button>
             </div>
-          </div>
-          <nav className="hidden items-center gap-6 text-sm font-medium text-brand-muted md:flex">
-            <a className="transition text-brand-accent" href="#services">
-              Services
-            </a>
-            <a className="transition hover:text-brand-accent" href="#bento">
-              Trust
-            </a>
-            <a className="transition hover:text-brand-accent" href="#listings">
-              Portfolio
-            </a>
-            <a className="transition hover:text-brand-accent" href="#contact">
-              Contact
-            </a>
-          </nav>
-          <button className="rounded-full bg-brand-gold px-5 py-2 text-sm font-semibold text-brand-ink shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-            Schedule a Call
-          </button>
-        </header>
+          </header>
+        </div>
 
         <section className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 gap-12 px-6 pb-20 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-6 animate-fade-up">
@@ -192,16 +199,13 @@ export default function Home() {
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="grid gap-6 md:grid-cols-2 animate-stagger">
             {bentoHighlights.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-3xl border border-brand-sand bg-brand-surface p-6 shadow-sm"
-              >
+              <div key={item.title} className="rounded-3xl glass p-6 shadow-sm">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
                 <p className="mt-3 text-brand-muted">{item.description}</p>
               </div>
             ))}
           </div>
-          <div className="flex flex-col gap-6 rounded-3xl border border-brand-sand bg-brand-surface-strong p-6">
+          <div className="flex flex-col gap-6 rounded-3xl glass-strong p-6">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
                 Market proof
@@ -213,10 +217,7 @@ export default function Home() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               {bentoStats.map((stat) => (
-                <div
-                  key={stat.title}
-                  className="rounded-2xl border border-brand-sand bg-brand-surface p-4"
-                >
+                <div key={stat.title} className="rounded-2xl glass p-4">
                   <p className="text-2xl font-semibold">{stat.title}</p>
                   <p className="text-sm text-brand-muted">{stat.description}</p>
                 </div>
@@ -244,10 +245,7 @@ export default function Home() {
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4 animate-stagger">
             {bentoServices.map((service) => (
-              <div
-                key={service.title}
-                className="rounded-3xl border border-brand-sand bg-brand-surface p-6 shadow-sm"
-              >
+              <div key={service.title} className="rounded-3xl glass p-6 shadow-sm">
                 <h3 className="text-xl font-semibold">{service.title}</h3>
                 <p className="mt-3 text-brand-muted">{service.description}</p>
               </div>
@@ -272,7 +270,7 @@ export default function Home() {
           {showcaseListings.map((listing) => (
             <article
               key={listing.title}
-              className="overflow-hidden rounded-3xl border border-brand-sand bg-brand-surface shadow-sm"
+              className="overflow-hidden rounded-3xl glass shadow-sm"
             >
               <img
                 className="h-56 w-full object-cover"
@@ -306,7 +304,7 @@ export default function Home() {
                 {bentoTestimonials.map((testimonial) => (
                   <div
                     key={testimonial.name}
-                    className="rounded-3xl border border-brand-sand bg-brand-surface p-6"
+                    className="rounded-3xl glass p-6"
                   >
                     <p className="text-lg">"{testimonial.quote}"</p>
                     <p className="mt-4 text-sm font-semibold">{testimonial.name}</p>
@@ -315,21 +313,21 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="space-y-6 rounded-3xl border border-brand-sand bg-brand-surface p-8 shadow-sm">
+            <div className="space-y-6 rounded-3xl glass p-8 shadow-sm">
               <h3 className="text-2xl font-semibold">Project assurance plan</h3>
               <p className="text-brand-muted">
                 Weekly updates, documented approvals, and a dedicated project lead for every build or renovation.
               </p>
               <div className="grid gap-4">
-                <div className="rounded-2xl bg-brand-surface-strong p-4 text-sm">
+                <div className="rounded-2xl glass-strong p-4 text-sm">
                   <p className="font-semibold">Milestone reporting</p>
                   <p className="text-brand-muted">Photos, budget status, and approvals.</p>
                 </div>
-                <div className="rounded-2xl bg-brand-surface-strong p-4 text-sm">
+                <div className="rounded-2xl glass-strong p-4 text-sm">
                   <p className="font-semibold">Schedule protection</p>
                   <p className="text-brand-muted">Buffer planning for permits and inspections.</p>
                 </div>
-                <div className="rounded-2xl bg-brand-surface-strong p-4 text-sm">
+                <div className="rounded-2xl glass-strong p-4 text-sm">
                   <p className="font-semibold">Quality walkthroughs</p>
                   <p className="text-brand-muted">Final inspection with punch-list follow up.</p>
                 </div>
@@ -343,7 +341,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="mx-auto w-full max-w-6xl px-6 py-20">
-        <div className="grid gap-10 rounded-3xl border border-brand-sand bg-brand-surface p-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid gap-10 rounded-3xl glass p-10 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold">Let’s design your next move</h2>
             <p className="text-brand-muted">
@@ -358,7 +356,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="space-y-4 rounded-3xl bg-brand-surface-strong p-6 shadow-sm">
+          <div className="space-y-4 rounded-3xl glass-strong p-6 shadow-sm">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
                 Contact
