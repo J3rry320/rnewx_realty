@@ -151,5 +151,23 @@
     "aria": "Toggle theme",
     "light": "Light mode",
     "dark": "Dark mode"
+  },
+  "Auth": {
+    "badge": "Secure access",
+    "title": "Sign in to your Rnewx dashboard.",
+    "subtitle": "Track builds, renovations, listings, and approvals in one place.",
+    "helper": "Use the same login you used during onboarding.",
+    "formTitle": "Welcome back",
+    "formSubtitle": "Enter your credentials to continue.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "name@company.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Sign in",
+    "loading": "Signing in...",
+    "divider": "Or",
+    "google": "Continue with Google",
+    "error": "We couldn't sign you in. Please try again.",
+    "note": "By continuing, you agree to our terms and privacy policy."
   }
 }
