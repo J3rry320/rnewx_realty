@@ -1,0 +1,155 @@
+{
+  "Nav": {
+    "services": "Services",
+    "trust": "Trust",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "schedule": "Schedule a Call"
+  },
+  "Brand": {
+    "name": "Rnewx Realty",
+    "tagline": "Trust-first development",
+    "badge": "Rnewx Development Collective"
+  },
+  "Hero": {
+    "title": "A calm, transparent path to buy, build, or renovate with confidence.",
+    "subtitle": "We combine real estate advisory, vetted builders, and project accountability to create trust at every milestone.",
+    "imageAlt1": "Luxury estate exterior",
+    "imageAlt2": "Refined interior living room",
+    "imageAlt3": "Custom build in progress",
+    "ctaPrimary": "Explore opportunities",
+    "ctaSecondary": "Download trust guide"
+  },
+  "Trust": {
+    "eyebrow": "Trust framework",
+    "title": "Built to protect your investment",
+    "subtitle": "Every step is documented, every partner is vetted, and every decision is guided by experienced advisors.",
+    "highlights": {
+      "verified": {
+        "title": "Verified Build Partners",
+        "description": "Every contractor is vetted for licensing, insurance, and past performance before joining our network."
+      },
+      "ledger": {
+        "title": "Transparent Project Ledger",
+        "description": "Track costs, milestones, and selections in one dashboard with no surprise change orders."
+      },
+      "council": {
+        "title": "Design Review Council",
+        "description": "Architects and planners review each project to protect neighborhood integrity and resale value."
+      },
+      "permits": {
+        "title": "Permits Managed",
+        "description": "We coordinate city approvals and inspections, keeping your timeline on track."
+      }
+    },
+    "proofEyebrow": "Market proof",
+    "proofTitle": "A track record backed by data",
+    "proofSubtitle": "We earn trust by delivering measurable outcomes and transparent reporting.",
+    "stats": {
+      "projects": "Projects delivered",
+      "rating": "Client rating",
+      "neighborhoods": "Neighborhoods served",
+      "value": "Total builds managed"
+    },
+    "proofCta": "View reporting sample"
+  },
+  "Services": {
+    "eyebrow": "Services",
+    "title": "One studio for every stage",
+    "subtitle": "We guide buyers, sellers, and property owners with the same disciplined process for every project.",
+    "items": {
+      "buySell": {
+        "title": "Buy & Sell",
+        "description": "Market analysis, pricing strategy, and elevated marketing for buyers and sellers."
+      },
+      "newConstruction": {
+        "title": "New Construction",
+        "description": "Select from curated floorplans or create a custom build with our design studio."
+      },
+      "renovations": {
+        "title": "Renovations",
+        "description": "Thoughtful upgrades to preserve character while improving performance and comfort."
+      },
+      "propertyCare": {
+        "title": "Property Care",
+        "description": "Ongoing management, leasing, and preventative maintenance programs."
+      }
+    }
+  },
+  "Portfolio": {
+    "eyebrow": "Portfolio",
+    "title": "Recent builds and renovations",
+    "cta": "View full portfolio",
+    "items": {
+      "cedar": {
+        "title": "Cedar Court Residences",
+        "location": "Austin, TX",
+        "price": "$1.2M"
+      },
+      "ridgecrest": {
+        "title": "Ridgecrest Renovation",
+        "location": "Boulder, CO",
+        "price": "$680K"
+      },
+      "silverline": {
+        "title": "Silverline Townhomes",
+        "location": "Raleigh, NC",
+        "price": "$890K"
+      }
+    }
+  },
+  "Experience": {
+    "eyebrow": "Client experience",
+    "title": "High-touch, low-stress delivery",
+    "subtitle": "We run a steady communication cadence and keep all teams accountable to the same timeline.",
+    "testimonials": {
+      "avery": {
+        "quote": "Rnewx delivered weekly transparency and zero surprises. We felt confident at every decision point.",
+        "name": "Avery Sutton",
+        "role": "Custom Build Client"
+      },
+      "lina": {
+        "quote": "Their renovation process protected the home’s character while dramatically improving the layout.",
+        "name": "Lina Cho",
+        "role": "Renovation Client"
+      }
+    }
+  },
+  "Assurance": {
+    "title": "Project assurance plan",
+    "subtitle": "Weekly updates, documented approvals, and a dedicated project lead for every build or renovation.",
+    "milestone": {
+      "title": "Milestone reporting",
+      "description": "Photos, budget status, and approvals."
+    },
+    "schedule": {
+      "title": "Schedule protection",
+      "description": "Buffer planning for permits and inspections."
+    },
+    "quality": {
+      "title": "Quality walkthroughs",
+      "description": "Final inspection with punch-list follow up."
+    },
+    "cta": "Request a project plan"
+  },
+  "Contact": {
+    "title": "Let’s design your next move",
+    "subtitle": "Schedule a private consultation to review listings, discuss new construction, or outline a renovation roadmap.",
+    "ctaPrimary": "Book consultation",
+    "ctaSecondary": "Download service guide",
+    "contactEyebrow": "Contact",
+    "studioEyebrow": "Studio"
+  },
+  "Footer": {
+    "rights": "© 2026 Rnewx Realty. All rights reserved.",
+    "services": "Services",
+    "trust": "Trust",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "Theme": {
+    "aria": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  }
+}

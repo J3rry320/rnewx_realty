@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 type Theme = "light" | "dark";
 
 const storageKey = "rnewx-theme";
 
 export default function ThemeToggle() {
+  const t = useTranslations("Theme");
   const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
@@ -36,11 +38,11 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       className="glass flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold text-brand-accent transition hover:border-brand-gold/70"
-      aria-label="Toggle theme"
+      aria-label={t("aria")}
       type="button"
     >
       <span className="h-2 w-2 rounded-full bg-brand-gold" />
-      {theme === "dark" ? "Light mode" : "Dark mode"}
+      {theme === "dark" ? t("light") : t("dark")}
     </button>
   );
 }

@@ -1,107 +1,109 @@
-import ThemeToggle from "./components/ThemeToggle";
-
-const bentoHighlights = [
-  {
-    title: "Verified Build Partners",
-    description:
-      "Every contractor is vetted for licensing, insurance, and past performance before joining our network.",
-  },
-  {
-    title: "Transparent Project Ledger",
-    description:
-      "Track costs, milestones, and selections in one dashboard with no surprise change orders.",
-  },
-  {
-    title: "Design Review Council",
-    description:
-      "Architects and planners review each project to protect neighborhood integrity and resale value.",
-  },
-  {
-    title: "Permits Managed",
-    description:
-      "We coordinate city approvals and inspections, keeping your timeline on track.",
-  },
-];
-
-const bentoStats = [
-  {
-    title: "120+",
-    description: "Projects delivered",
-  },
-  {
-    title: "4.9/5",
-    description: "Client rating",
-  },
-  {
-    title: "18",
-    description: "Neighborhoods served",
-  },
-  {
-    title: "$210M",
-    description: "Total builds managed",
-  },
-];
-
-const bentoServices = [
-  {
-    title: "Buy & Sell",
-    description:
-      "Market analysis, pricing strategy, and elevated marketing for buyers and sellers.",
-  },
-  {
-    title: "New Construction",
-    description:
-      "Select from curated floorplans or create a custom build with our design studio.",
-  },
-  {
-    title: "Renovations",
-    description:
-      "Thoughtful upgrades to preserve character while improving performance and comfort.",
-  },
-  {
-    title: "Property Care",
-    description:
-      "Ongoing management, leasing, and preventative maintenance programs.",
-  },
-];
-
-const bentoTestimonials = [
-  {
-    quote:
-      "Rnewx delivered weekly transparency and zero surprises. We felt confident at every decision point.",
-    name: "Avery Sutton",
-    role: "Custom Build Client",
-  },
-  {
-    quote:
-      "Their renovation process protected the home’s character while dramatically improving the layout.",
-    name: "Lina Cho",
-    role: "Renovation Client",
-  },
-];
-
-const showcaseListings = [
-  {
-    title: "Cedar Court Residences",
-    location: "Austin, TX",
-    price: "$1.2M",
-    image: "https://picsum.photos/seed/cedar-court/640/520",
-  },
-  {
-    title: "Ridgecrest Renovation",
-    location: "Boulder, CO",
-    price: "$680K",
-    image: "https://picsum.photos/seed/ridgecrest/640/520",
-  },
-  {
-    title: "Silverline Townhomes",
-    location: "Raleigh, NC",
-    price: "$890K",
-    image: "https://picsum.photos/seed/silverline/640/520",
-  },
-];
+import { useTranslations } from "next-intl";
+import ThemeToggle from "../components/ThemeToggle";
 
 export default function Home() {
+  const tNav = useTranslations("Nav");
+  const tBrand = useTranslations("Brand");
+  const tHero = useTranslations("Hero");
+  const tTrust = useTranslations("Trust");
+  const tServices = useTranslations("Services");
+  const tPortfolio = useTranslations("Portfolio");
+  const tExperience = useTranslations("Experience");
+  const tAssurance = useTranslations("Assurance");
+  const tContact = useTranslations("Contact");
+  const tFooter = useTranslations("Footer");
+
+  const bentoHighlights = [
+    {
+      title: tTrust("highlights.verified.title"),
+      description: tTrust("highlights.verified.description"),
+    },
+    {
+      title: tTrust("highlights.ledger.title"),
+      description: tTrust("highlights.ledger.description"),
+    },
+    {
+      title: tTrust("highlights.council.title"),
+      description: tTrust("highlights.council.description"),
+    },
+    {
+      title: tTrust("highlights.permits.title"),
+      description: tTrust("highlights.permits.description"),
+    },
+  ];
+
+  const bentoStats = [
+    {
+      value: "120+",
+      label: tTrust("stats.projects"),
+    },
+    {
+      value: "4.9/5",
+      label: tTrust("stats.rating"),
+    },
+    {
+      value: "18",
+      label: tTrust("stats.neighborhoods"),
+    },
+    {
+      value: "$210M",
+      label: tTrust("stats.value"),
+    },
+  ];
+
+  const bentoServices = [
+    {
+      title: tServices("items.buySell.title"),
+      description: tServices("items.buySell.description"),
+    },
+    {
+      title: tServices("items.newConstruction.title"),
+      description: tServices("items.newConstruction.description"),
+    },
+    {
+      title: tServices("items.renovations.title"),
+      description: tServices("items.renovations.description"),
+    },
+    {
+      title: tServices("items.propertyCare.title"),
+      description: tServices("items.propertyCare.description"),
+    },
+  ];
+
+  const testimonials = [
+    {
+      quote: tExperience("testimonials.avery.quote"),
+      name: tExperience("testimonials.avery.name"),
+      role: tExperience("testimonials.avery.role"),
+    },
+    {
+      quote: tExperience("testimonials.lina.quote"),
+      name: tExperience("testimonials.lina.name"),
+      role: tExperience("testimonials.lina.role"),
+    },
+  ];
+
+  const showcaseListings = [
+    {
+      title: tPortfolio("items.cedar.title"),
+      location: tPortfolio("items.cedar.location"),
+      price: tPortfolio("items.cedar.price"),
+      image: "https://picsum.photos/seed/cedar-court/640/520",
+    },
+    {
+      title: tPortfolio("items.ridgecrest.title"),
+      location: tPortfolio("items.ridgecrest.location"),
+      price: tPortfolio("items.ridgecrest.price"),
+      image: "https://picsum.photos/seed/ridgecrest/640/520",
+    },
+    {
+      title: tPortfolio("items.silverline.title"),
+      location: tPortfolio("items.silverline.location"),
+      price: tPortfolio("items.silverline.price"),
+      image: "https://picsum.photos/seed/silverline/640/520",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-background text-brand-accent">
       <div className="relative overflow-hidden">
@@ -116,28 +118,32 @@ export default function Home() {
                 R
               </div>
               <div>
-                <p className="text-lg font-semibold tracking-wide">Rnewx Realty</p>
-                <p className="text-sm text-brand-muted">Trust-first development</p>
+                <p className="text-lg font-semibold tracking-wide">
+                  {tBrand("name")}
+                </p>
+                <p className="text-sm text-brand-muted">
+                  {tBrand("tagline")}
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <nav className="hidden items-center gap-6 text-sm font-medium text-brand-muted md:flex">
                 <a className="transition text-brand-accent" href="#services">
-                  Services
+                  {tNav("services")}
                 </a>
                 <a className="transition hover:text-brand-accent" href="#bento">
-                  Trust
+                  {tNav("trust")}
                 </a>
                 <a className="transition hover:text-brand-accent" href="#listings">
-                  Portfolio
+                  {tNav("portfolio")}
                 </a>
                 <a className="transition hover:text-brand-accent" href="#contact">
-                  Contact
+                  {tNav("contact")}
                 </a>
               </nav>
               <ThemeToggle />
               <button className="rounded-full bg-brand-gold px-5 py-2 text-sm font-semibold text-brand-ink shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-                Schedule a Call
+                {tNav("schedule")}
               </button>
             </div>
           </header>
@@ -146,20 +152,18 @@ export default function Home() {
         <section className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 gap-12 px-6 pb-20 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-6 animate-fade-up">
             <p className="inline-flex items-center gap-2 rounded-full border border-brand-sand bg-brand-surface/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">
-              Rnewx Development Collective
+              {tBrand("badge")}
             </p>
             <h1 className="text-balance text-4xl font-semibold leading-tight sm:text-5xl">
-              A calm, transparent path to buy, build, or renovate with confidence.
+              {tHero("title")}
             </h1>
-            <p className="text-lg text-brand-muted">
-              We combine real estate advisory, vetted builders, and project accountability to create trust at every milestone.
-            </p>
+            <p className="text-lg text-brand-muted">{tHero("subtitle")}</p>
             <div className="flex flex-wrap gap-4">
               <button className="rounded-full bg-brand-terracotta px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5">
-                Explore opportunities
+                {tHero("ctaPrimary")}
               </button>
               <button className="rounded-full border border-brand-sand bg-brand-surface px-6 py-3 text-sm font-semibold text-brand-accent transition hover:border-brand-gold/60">
-                Download trust guide
+                {tHero("ctaSecondary")}
               </button>
             </div>
           </div>
@@ -167,17 +171,17 @@ export default function Home() {
             <img
               className="h-56 w-full rounded-3xl object-cover shadow-lg"
               src="https://picsum.photos/seed/hero-estate/640/480"
-              alt="Luxury estate exterior"
+              alt={tHero("imageAlt1")}
             />
             <img
               className="h-56 w-full rounded-3xl object-cover shadow-lg sm:mt-10"
               src="https://picsum.photos/seed/hero-interior/640/480"
-              alt="Refined interior living room"
+              alt={tHero("imageAlt2")}
             />
             <img
               className="h-56 w-full rounded-3xl object-cover shadow-lg sm:col-span-2"
               src="https://picsum.photos/seed/hero-build/960/520"
-              alt="Custom build in progress"
+              alt={tHero("imageAlt3")}
             />
           </div>
         </section>
@@ -187,13 +191,11 @@ export default function Home() {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="space-y-3">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
-              Trust framework
+              {tTrust("eyebrow")}
             </p>
-            <h2 className="text-3xl font-semibold">Built to protect your investment</h2>
+            <h2 className="text-3xl font-semibold">{tTrust("title")}</h2>
           </div>
-          <p className="max-w-xl text-brand-muted">
-            Every step is documented, every partner is vetted, and every decision is guided by experienced advisors.
-          </p>
+          <p className="max-w-xl text-brand-muted">{tTrust("subtitle")}</p>
         </div>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
@@ -208,23 +210,21 @@ export default function Home() {
           <div className="flex flex-col gap-6 rounded-3xl glass-strong p-6">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
-                Market proof
+                {tTrust("proofEyebrow")}
               </p>
-              <h3 className="text-2xl font-semibold">A track record backed by data</h3>
-              <p className="mt-2 text-brand-muted">
-                We earn trust by delivering measurable outcomes and transparent reporting.
-              </p>
+              <h3 className="text-2xl font-semibold">{tTrust("proofTitle")}</h3>
+              <p className="mt-2 text-brand-muted">{tTrust("proofSubtitle")}</p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               {bentoStats.map((stat) => (
-                <div key={stat.title} className="rounded-2xl glass p-4">
-                  <p className="text-2xl font-semibold">{stat.title}</p>
-                  <p className="text-sm text-brand-muted">{stat.description}</p>
+                <div key={stat.label} className="rounded-2xl glass p-4">
+                  <p className="text-2xl font-semibold">{stat.value}</p>
+                  <p className="text-sm text-brand-muted">{stat.label}</p>
                 </div>
               ))}
             </div>
             <button className="rounded-full bg-brand-gold px-5 py-2 text-sm font-semibold text-brand-ink">
-              View reporting sample
+              {tTrust("proofCta")}
             </button>
           </div>
         </div>
@@ -235,13 +235,11 @@ export default function Home() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="space-y-3">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-terracotta">
-                Services
+                {tServices("eyebrow")}
               </p>
-              <h2 className="text-3xl font-semibold">One studio for every stage</h2>
+              <h2 className="text-3xl font-semibold">{tServices("title")}</h2>
             </div>
-            <p className="max-w-xl text-brand-muted">
-              We guide buyers, sellers, and property owners with the same disciplined process for every project.
-            </p>
+            <p className="max-w-xl text-brand-muted">{tServices("subtitle")}</p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4 animate-stagger">
             {bentoServices.map((service) => (
@@ -258,12 +256,12 @@ export default function Home() {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="space-y-3">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
-              Portfolio
+              {tPortfolio("eyebrow")}
             </p>
-            <h2 className="text-3xl font-semibold">Recent builds and renovations</h2>
+            <h2 className="text-3xl font-semibold">{tPortfolio("title")}</h2>
           </div>
           <button className="rounded-full border border-brand-sand bg-brand-surface px-5 py-2 text-sm font-semibold text-brand-accent">
-            View full portfolio
+            {tPortfolio("cta")}
           </button>
         </div>
         <div className="mt-10 grid gap-6 lg:grid-cols-3 animate-stagger">
@@ -294,46 +292,49 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="space-y-6">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-terracotta">
-                Client experience
+                {tExperience("eyebrow")}
               </p>
-              <h2 className="text-3xl font-semibold">High-touch, low-stress delivery</h2>
-              <p className="text-brand-muted">
-                We run a steady communication cadence and keep all teams accountable to the same timeline.
-              </p>
+              <h2 className="text-3xl font-semibold">{tExperience("title")}</h2>
+              <p className="text-brand-muted">{tExperience("subtitle")}</p>
               <div className="grid gap-4">
-                {bentoTestimonials.map((testimonial) => (
-                  <div
-                    key={testimonial.name}
-                    className="rounded-3xl glass p-6"
-                  >
+                {testimonials.map((testimonial) => (
+                  <div key={testimonial.name} className="rounded-3xl glass p-6">
                     <p className="text-lg">"{testimonial.quote}"</p>
-                    <p className="mt-4 text-sm font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-brand-muted">{testimonial.role}</p>
+                    <p className="mt-4 text-sm font-semibold">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-brand-muted">
+                      {testimonial.role}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
             <div className="space-y-6 rounded-3xl glass p-8 shadow-sm">
-              <h3 className="text-2xl font-semibold">Project assurance plan</h3>
-              <p className="text-brand-muted">
-                Weekly updates, documented approvals, and a dedicated project lead for every build or renovation.
-              </p>
+              <h3 className="text-2xl font-semibold">{tAssurance("title")}</h3>
+              <p className="text-brand-muted">{tAssurance("subtitle")}</p>
               <div className="grid gap-4">
                 <div className="rounded-2xl glass-strong p-4 text-sm">
-                  <p className="font-semibold">Milestone reporting</p>
-                  <p className="text-brand-muted">Photos, budget status, and approvals.</p>
+                  <p className="font-semibold">{tAssurance("milestone.title")}</p>
+                  <p className="text-brand-muted">
+                    {tAssurance("milestone.description")}
+                  </p>
                 </div>
                 <div className="rounded-2xl glass-strong p-4 text-sm">
-                  <p className="font-semibold">Schedule protection</p>
-                  <p className="text-brand-muted">Buffer planning for permits and inspections.</p>
+                  <p className="font-semibold">{tAssurance("schedule.title")}</p>
+                  <p className="text-brand-muted">
+                    {tAssurance("schedule.description")}
+                  </p>
                 </div>
                 <div className="rounded-2xl glass-strong p-4 text-sm">
-                  <p className="font-semibold">Quality walkthroughs</p>
-                  <p className="text-brand-muted">Final inspection with punch-list follow up.</p>
+                  <p className="font-semibold">{tAssurance("quality.title")}</p>
+                  <p className="text-brand-muted">
+                    {tAssurance("quality.description")}
+                  </p>
                 </div>
               </div>
               <button className="rounded-full bg-brand-terracotta px-6 py-3 text-sm font-semibold text-white">
-                Request a project plan
+                {tAssurance("cta")}
               </button>
             </div>
           </div>
@@ -343,30 +344,28 @@ export default function Home() {
       <section id="contact" className="mx-auto w-full max-w-6xl px-6 py-20">
         <div className="grid gap-10 rounded-3xl glass p-10 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="space-y-6">
-            <h2 className="text-3xl font-semibold">Let’s design your next move</h2>
-            <p className="text-brand-muted">
-              Schedule a private consultation to review listings, discuss new construction, or outline a renovation roadmap.
-            </p>
+            <h2 className="text-3xl font-semibold">{tContact("title")}</h2>
+            <p className="text-brand-muted">{tContact("subtitle")}</p>
             <div className="flex flex-wrap gap-4">
               <button className="rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-ink">
-                Book consultation
+                {tContact("ctaPrimary")}
               </button>
               <button className="rounded-full border border-brand-sand bg-brand-surface-strong px-6 py-3 text-sm font-semibold text-brand-accent">
-                Download service guide
+                {tContact("ctaSecondary")}
               </button>
             </div>
           </div>
           <div className="space-y-4 rounded-3xl glass-strong p-6 shadow-sm">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
-                Contact
+                {tContact("contactEyebrow")}
               </p>
               <p className="mt-2 text-lg font-semibold">hello@rnewxrealty.com</p>
               <p className="text-brand-muted">(555) 214-9860</p>
             </div>
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
-                Studio
+                {tContact("studioEyebrow")}
               </p>
               <p className="text-brand-muted">246 Cedar Lane, Suite 200</p>
               <p className="text-brand-muted">Austin, TX 78701</p>
@@ -377,19 +376,19 @@ export default function Home() {
 
       <footer className="border-t border-brand-sand bg-background">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 py-10 text-sm text-brand-muted md:flex-row md:items-center md:justify-between">
-          <p>© 2026 Rnewx Realty. All rights reserved.</p>
+          <p>{tFooter("rights")}</p>
           <div className="flex flex-wrap gap-6">
             <a className="hover:text-brand-accent" href="#services">
-              Services
+              {tFooter("services")}
             </a>
             <a className="hover:text-brand-accent" href="#bento">
-              Trust
+              {tFooter("trust")}
             </a>
             <a className="hover:text-brand-accent" href="#listings">
-              Portfolio
+              {tFooter("portfolio")}
             </a>
             <a className="hover:text-brand-accent" href="#contact">
-              Contact
+              {tFooter("contact")}
             </a>
           </div>
         </div>
