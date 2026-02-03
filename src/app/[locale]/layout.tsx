@@ -12,19 +12,24 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale?: string }>;
 }) {
   const { locale } = await params;
+  const resolvedLocale = routing.locales.includes(
+    locale as (typeof routing.locales)[number]
+  )
+    ? (locale as (typeof routing.locales)[number])
+    : routing.defaultLocale;
 
-  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
+  if (!resolvedLocale) {
     notFound();
   }
 
-  setRequestLocale(locale);
+  setRequestLocale(resolvedLocale);
   const messages = await getMessages();
 
   return (
-    <NextIntlClientProvider messages={messages} locale={locale}>
+    <NextIntlClientProvider messages={messages} locale={resolvedLocale}>
       {children}
     </NextIntlClientProvider>
   );

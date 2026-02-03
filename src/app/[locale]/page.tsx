@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import ThemeToggle from "../components/ThemeToggle";
 
@@ -168,20 +169,30 @@ export default function Home() {
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 animate-fade-in">
-            <img
+            <Image
               className="h-56 w-full rounded-3xl object-cover shadow-lg"
               src="https://picsum.photos/seed/hero-estate/640/480"
               alt={tHero("imageAlt1")}
+              width={640}
+              height={480}
+              priority
+              sizes="(min-width: 1024px) 280px, (min-width: 640px) 50vw, 100vw"
             />
-            <img
+            <Image
               className="h-56 w-full rounded-3xl object-cover shadow-lg sm:mt-10"
               src="https://picsum.photos/seed/hero-interior/640/480"
               alt={tHero("imageAlt2")}
+              width={640}
+              height={480}
+              sizes="(min-width: 1024px) 280px, (min-width: 640px) 50vw, 100vw"
             />
-            <img
+            <Image
               className="h-56 w-full rounded-3xl object-cover shadow-lg sm:col-span-2"
               src="https://picsum.photos/seed/hero-build/960/520"
               alt={tHero("imageAlt3")}
+              width={960}
+              height={520}
+              sizes="(min-width: 1024px) 560px, 100vw"
             />
           </div>
         </section>
@@ -270,10 +281,13 @@ export default function Home() {
               key={listing.title}
               className="overflow-hidden rounded-3xl glass shadow-sm"
             >
-              <img
+              <Image
                 className="h-56 w-full object-cover"
                 src={listing.image}
                 alt={listing.title}
+                width={640}
+                height={520}
+                sizes="(min-width: 1024px) 320px, (min-width: 640px) 50vw, 100vw"
               />
               <div className="space-y-3 p-6">
                 <h3 className="text-xl font-semibold">{listing.title}</h3>

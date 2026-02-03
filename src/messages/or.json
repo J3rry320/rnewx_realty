@@ -1,85 +1,85 @@
 {
   "Nav": {
-    "services": "Services",
-    "trust": "Trust",
-    "portfolio": "Portfolio",
-    "contact": "Contact",
-    "schedule": "Schedule a Call"
+    "services": "ସେବାଗୁଡ଼ିକ",
+    "trust": "ଭରସା",
+    "portfolio": "ପୋର୍ଟଫୋଲିଓ",
+    "contact": "ଯୋଗାଯୋଗ",
+    "schedule": "କଲ୍ ସ୍କେଡ୍ୟୁଲ୍ କରନ୍ତୁ"
   },
   "Brand": {
     "name": "Rnewx Realty",
-    "tagline": "Trust-first development",
+    "tagline": "ଭରସାକୁ ପ୍ରଥମ ମାନିଥିବା ବିକାଶ",
     "badge": "Rnewx Development Collective"
   },
   "Hero": {
-    "title": "A calm, transparent path to buy, build, or renovate with confidence.",
-    "subtitle": "We combine real estate advisory, vetted builders, and project accountability to create trust at every milestone.",
-    "imageAlt1": "Luxury estate exterior",
-    "imageAlt2": "Refined interior living room",
-    "imageAlt3": "Custom build in progress",
-    "ctaPrimary": "Explore opportunities",
-    "ctaSecondary": "Download trust guide"
+    "title": "ଆତ୍ମବିଶ୍ୱାସ ସହିତ କିଣିବା, ନିର୍ମାଣ କିମ୍ବା ପୁନରୁଦ୍ଧାର ପାଇଁ ଏକ ସ୍ପଷ୍ଟ ଓ ଶାନ୍ତ ପଥ।",
+    "subtitle": "ଆମେ ରିଏଲ୍ ଏଷ୍ଟେଟ୍ ପରାମର୍ଶ, ଯାଞ୍ଚିତ ନିର୍ମାତା ଏବଂ ପ୍ରକଳ୍ପ ଦାୟିତ୍ୱବୋଧକୁ ଏକତ୍ର କରି ପ୍ରତ୍ୟେକ ପର୍ଯ୍ୟାୟରେ ଭରସା ଗଢ଼ୁଛୁ।",
+    "imageAlt1": "ଆଡମ୍ବରମୟ ଏଷ୍ଟେଟ୍ ବାହ୍ୟ ଦୃଶ୍ୟ",
+    "imageAlt2": "ସୁସଂସ୍କୃତ ଆଭ୍ୟନ୍ତରୀଣ ଲିଭିଂ ରୁମ୍",
+    "imageAlt3": "ଚାଲୁଥିବା କଷ୍ଟମ୍ ନିର୍ମାଣ",
+    "ctaPrimary": "ସୁଯୋଗଗୁଡ଼ିକ ଅନୁସନ୍ଧାନ କରନ୍ତୁ",
+    "ctaSecondary": "ଭରସା ଗାଇଡ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ"
   },
   "Trust": {
-    "eyebrow": "Trust framework",
-    "title": "Built to protect your investment",
-    "subtitle": "Every step is documented, every partner is vetted, and every decision is guided by experienced advisors.",
+    "eyebrow": "ଭରସା ଢାଞ୍ଚା",
+    "title": "ଆପଣଙ୍କ ନିବେଶକୁ ସୁରକ୍ଷିତ କରିବା ପାଇଁ ଗଢ଼ାଯାଇଛି",
+    "subtitle": "ପ୍ରତ୍ୟେକ ପଦକ୍ଷେପ ଲେଖାଯାଇଥାଏ, ପ୍ରତ୍ୟେକ ସହଯୋଗୀ ଯାଞ୍ଚିତ ଏବଂ ପ୍ରତ୍ୟେକ ସିଦ୍ଧାନ୍ତ ଅନୁଭବୀ ପରାମର୍ଶଦାତାଙ୍କ ଦ୍ୱାରା ନିର୍ଦ୍ଦେଶିତ।",
     "highlights": {
       "verified": {
-        "title": "Verified Build Partners",
-        "description": "Every contractor is vetted for licensing, insurance, and past performance before joining our network."
+        "title": "ଯାଞ୍ଚିତ ନିର୍ମାଣ ସହଯୋଗୀ",
+        "description": "ଆମ ନେଟୱର୍କରେ ଯୋଗ ଦେବା ପୂର୍ବରୁ ପ୍ରତ୍ୟେକ ଠିକାଦାରଙ୍କ ଲାଇସେନ୍ସ, ବୀମା ଏବଂ ପୂର୍ବ ରେକର୍ଡ ଯାଞ୍ଚ କରାଯାଏ।"
       },
       "ledger": {
-        "title": "Transparent Project Ledger",
-        "description": "Track costs, milestones, and selections in one dashboard with no surprise change orders."
+        "title": "ପାରଦର୍ଶୀ ପ୍ରକଳ୍ପ ଲେଜର୍",
+        "description": "ଏକ ଡ୍ୟାସବୋର୍ଡରେ ଖର୍ଚ୍ଚ, ମାଇଲ୍‌ଷ୍ଟୋନ୍ ଓ ଚୟନଗୁଡ଼ିକୁ ଟ୍ରାକ୍ କରନ୍ତୁ—କୌଣସି ଅପେକ୍ଷିତ ପରିବର୍ତ୍ତନ ନାହିଁ।"
       },
       "council": {
-        "title": "Design Review Council",
-        "description": "Architects and planners review each project to protect neighborhood integrity and resale value."
+        "title": "ଡିଜାଇନ୍ ରିଭ୍ୟୁ କାଉନସିଲ୍",
+        "description": "ପ୍ରତ୍ୟେକ ପ୍ରକଳ୍ପକୁ ସ୍ଥାପତ୍ୟ ଓ ପ୍ଲାନର୍ମାନେ ସମୀକ୍ଷା କରନ୍ତି, ପଡ଼ୋଶୀୟ ସମନ୍ୱୟ ଓ ପୁନର୍ବିକ୍ରୟ ମୂଲ୍ୟ ସୁରକ୍ଷିତ କରିବା ପାଇଁ।"
       },
       "permits": {
-        "title": "Permits Managed",
-        "description": "We coordinate city approvals and inspections, keeping your timeline on track."
+        "title": "ପରମିଟ୍ ପରିଚାଳନା",
+        "description": "ଆମେ ସହରୀୟ ଅନୁମୋଦନ ଓ ନିରୀକ୍ଷଣ ସମନ୍ୱୟ କରି ଆପଣଙ୍କ ଟାଇମଲାଇନ୍ ଠିକ୍ ରଖୁଛୁ।"
       }
     },
-    "proofEyebrow": "Market proof",
-    "proofTitle": "A track record backed by data",
-    "proofSubtitle": "We earn trust by delivering measurable outcomes and transparent reporting.",
+    "proofEyebrow": "ବଜାର ପ୍ରମାଣ",
+    "proofTitle": "ତଥ୍ୟ ଦ୍ୱାରା ସମର୍ଥିତ ଏକ ପ୍ରମାଣିତ ରେକର୍ଡ",
+    "proofSubtitle": "ଆମେ ମାପଯୋଗ୍ୟ ଫଳାଫଳ ଏବଂ ପାରଦର୍ଶୀ ରିପୋର୍ଟିଂ ମାଧ୍ୟମରେ ଭରସା ଅର୍ଜନ କରୁଛୁ।",
     "stats": {
-      "projects": "Projects delivered",
-      "rating": "Client rating",
-      "neighborhoods": "Neighborhoods served",
-      "value": "Total builds managed"
+      "projects": "ସମ୍ପନ୍ନ ପ୍ରକଳ୍ପ",
+      "rating": "ଗ୍ରାହକ ମୂଲ୍ୟାଙ୍କନ",
+      "neighborhoods": "ସେବା ଦିଆଯାଇଥିବା ଅଞ୍ଚଳ",
+      "value": "ମୋଟ ପରିଚାଳିତ ନିର୍ମାଣ ମୂଲ୍ୟ"
     },
-    "proofCta": "View reporting sample"
+    "proofCta": "ରିପୋର୍ଟିଂ ନମୁନା ଦେଖନ୍ତୁ"
   },
   "Services": {
-    "eyebrow": "Services",
-    "title": "One studio for every stage",
-    "subtitle": "We guide buyers, sellers, and property owners with the same disciplined process for every project.",
+    "eyebrow": "ସେବାଗୁଡ଼ିକ",
+    "title": "ପ୍ରତ୍ୟେକ ପର୍ଯ୍ୟାୟ ପାଇଁ ଗୋଟିଏ ଷ୍ଟୁଡିଓ",
+    "subtitle": "ଆମେ ପ୍ରତ୍ୟେକ ପ୍ରକଳ୍ପ ପାଇଁ ଏକ ସଂଯମିତ ପ୍ରକ୍ରିୟା ସହିତ କ୍ରେତା, ବିକ୍ରେତା ଓ ସମ୍ପତ୍ତି ମାଲିକଙ୍କୁ ଗାଇଡ୍ କରୁଛୁ।",
     "items": {
       "buySell": {
-        "title": "Buy & Sell",
-        "description": "Market analysis, pricing strategy, and elevated marketing for buyers and sellers."
+        "title": "କିଣିବା ଓ ବିକ୍ରି",
+        "description": "କ୍ରେତା ଓ ବିକ୍ରେତାଙ୍କ ପାଇଁ ବଜାର ବିଶ୍ଳେଷଣ, ମୂଲ୍ୟ ଯୋଜନା ଓ ଉନ୍ନତ ମାର୍କେଟିଂ।"
       },
       "newConstruction": {
-        "title": "New Construction",
-        "description": "Select from curated floorplans or create a custom build with our design studio."
+        "title": "ନୂତନ ନିର୍ମାଣ",
+        "description": "ଚୟନିତ ଫ୍ଲୋର୍ପ୍ଲାନ୍‌ରୁ ବାଛନ୍ତୁ କିମ୍ବା ଆମ ଡିଜାଇନ୍ ଷ୍ଟୁଡିଓ ସହିତ କଷ୍ଟମ୍ ନିର୍ମାଣ କରନ୍ତୁ।"
       },
       "renovations": {
-        "title": "Renovations",
-        "description": "Thoughtful upgrades to preserve character while improving performance and comfort."
+        "title": "ପୁନରୁଦ୍ଧାର",
+        "description": "ଚରିତ୍ର ରକ୍ଷା କରି ସୁବିଧା ଓ କାର୍ଯ୍ୟକ୍ଷମତା ବଢ଼ାଇବା ପାଇଁ ସଚେତନ ଉନ୍ନତି।"
       },
       "propertyCare": {
-        "title": "Property Care",
-        "description": "Ongoing management, leasing, and preventative maintenance programs."
+        "title": "ସମ୍ପତ୍ତି ଦେଖଭାଳ",
+        "description": "ନିରନ୍ତର ପରିଚାଳନା, ଲିଜିଂ ଓ ପୂର୍ବ-ରୋକଥାମ ରକ୍ଷଣାବେକ୍ଷଣ କାର୍ଯ୍ୟକ୍ରମ।"
       }
     }
   },
   "Portfolio": {
-    "eyebrow": "Portfolio",
-    "title": "Recent builds and renovations",
-    "cta": "View full portfolio",
+    "eyebrow": "ପୋର୍ଟଫୋଲିଓ",
+    "title": "ସମ୍ପ୍ରତିକ ନିର୍ମାଣ ଓ ପୁନରୁଦ୍ଧାର",
+    "cta": "ସମ୍ପୂର୍ଣ୍ଣ ପୋର୍ଟଫୋଲିଓ ଦେଖନ୍ତୁ",
     "items": {
       "cedar": {
         "title": "Cedar Court Residences",
@@ -99,57 +99,57 @@
     }
   },
   "Experience": {
-    "eyebrow": "Client experience",
-    "title": "High-touch, low-stress delivery",
-    "subtitle": "We run a steady communication cadence and keep all teams accountable to the same timeline.",
+    "eyebrow": "ଗ୍ରାହକ ଅନୁଭୂତି",
+    "title": "ଉଚ୍ଚ-ସମ୍ପର୍କ, କମ୍-ଚାପ ଡିଲିଭରି",
+    "subtitle": "ଆମେ ନିୟମିତ ସଂଯୋଗ ରଖୁଛୁ ଏବଂ ସମସ୍ତ ଟିମ୍‌କୁ ଏକେ ଟାଇମଲାଇନ୍‌ରେ ଦାୟିତ୍ୱବୋଧୀ କରୁଛୁ।",
     "testimonials": {
       "avery": {
-        "quote": "Rnewx delivered weekly transparency and zero surprises. We felt confident at every decision point.",
+        "quote": "Rnewx ପ୍ରତି ସପ୍ତାହରେ ପାରଦର୍ଶିତା ଦେଲା—କୌଣସି ଅଚମ୍ବିତ ନଥିଲା। ପ୍ରତ୍ୟେକ ସିଦ୍ଧାନ୍ତରେ ଆମେ ନିଶ୍ଚିନ୍ତ ଥିଲୁ।",
         "name": "Avery Sutton",
-        "role": "Custom Build Client"
+        "role": "କଷ୍ଟମ୍ ନିର୍ମାଣ ଗ୍ରାହକ"
       },
       "lina": {
-        "quote": "Their renovation process protected the home’s character while dramatically improving the layout.",
+        "quote": "ସେମାନଙ୍କର ପୁନରୁଦ୍ଧାର ପ୍ରକ୍ରିୟା ଘରର ଚରିତ୍ରକୁ ରକ୍ଷା କରି ଲେଆଉଟ୍‌କୁ ବହୁତ ଉନ୍ନତ କରିଥିଲା।",
         "name": "Lina Cho",
-        "role": "Renovation Client"
+        "role": "ପୁନରୁଦ୍ଧାର ଗ୍ରାହକ"
       }
     }
   },
   "Assurance": {
-    "title": "Project assurance plan",
-    "subtitle": "Weekly updates, documented approvals, and a dedicated project lead for every build or renovation.",
+    "title": "ପ୍ରକଳ୍ପ ଆଶ୍ୱାସନ ଯୋଜନା",
+    "subtitle": "ପ୍ରତି ସପ୍ତାହ ଅପଡେଟ୍, ଲେଖାଗତ ଅନୁମୋଦନ ଏବଂ ପ୍ରତ୍ୟେକ ପ୍ରକଳ୍ପ ପାଇଁ ଏକ ନିର୍ଦ୍ଦିଷ୍ଟ ପ୍ରକଳ୍ପ ଲିଡ୍।",
     "milestone": {
-      "title": "Milestone reporting",
-      "description": "Photos, budget status, and approvals."
+      "title": "ମାଇଲ୍‌ଷ୍ଟୋନ୍ ରିପୋର୍ଟିଂ",
+      "description": "ଫଟୋ, ବଜେଟ୍ ସ୍ଥିତି ଓ ଅନୁମୋଦନ।"
     },
     "schedule": {
-      "title": "Schedule protection",
-      "description": "Buffer planning for permits and inspections."
+      "title": "ସମୟସାରଣୀ ସୁରକ୍ଷା",
+      "description": "ପରମିଟ୍ ଓ ନିରୀକ୍ଷଣ ପାଇଁ ବଫର୍ ପ୍ଲାନିଂ।"
     },
     "quality": {
-      "title": "Quality walkthroughs",
-      "description": "Final inspection with punch-list follow up."
+      "title": "ଗୁଣମାନ ଯାଞ୍ଚ",
+      "description": "ପଞ୍ଚ୍-ଲିଷ୍ଟ୍ ଅନୁସରଣ ସହିତ ଅନ୍ତିମ ନିରୀକ୍ଷଣ।"
     },
-    "cta": "Request a project plan"
+    "cta": "ପ୍ରକଳ୍ପ ଯୋଜନା ଅନୁରୋଧ କରନ୍ତୁ"
   },
   "Contact": {
-    "title": "Let’s design your next move",
-    "subtitle": "Schedule a private consultation to review listings, discuss new construction, or outline a renovation roadmap.",
-    "ctaPrimary": "Book consultation",
-    "ctaSecondary": "Download service guide",
-    "contactEyebrow": "Contact",
-    "studioEyebrow": "Studio"
+    "title": "ଆପଣଙ୍କ ପରବର୍ତ୍ତୀ ପଦକ୍ଷେପ ଡିଜାଇନ୍ କରନ୍ତୁ",
+    "subtitle": "ଲିଷ୍ଟିଂ ଖତିଆନ, ନୂତନ ନିର୍ମାଣ କିମ୍ବା ପୁନରୁଦ୍ଧାର ଯୋଜନା ପାଇଁ ଗୋପନୀୟ ପରାମର୍ଶ ସ୍କେଡ୍ୟୁଲ୍ କରନ୍ତୁ।",
+    "ctaPrimary": "ପରାମର୍ଶ ବୁକ୍ କରନ୍ତୁ",
+    "ctaSecondary": "ସେବା ଗାଇଡ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+    "contactEyebrow": "ଯୋଗାଯୋଗ",
+    "studioEyebrow": "ଷ୍ଟୁଡିଓ"
   },
   "Footer": {
-    "rights": "© 2026 Rnewx Realty. All rights reserved.",
-    "services": "Services",
-    "trust": "Trust",
-    "portfolio": "Portfolio",
-    "contact": "Contact"
+    "rights": "© 2026 Rnewx Realty. ସମସ୍ତ ଅଧିକାର ସଂରକ୍ଷିତ।",
+    "services": "ସେବାଗୁଡ଼ିକ",
+    "trust": "ଭରସା",
+    "portfolio": "ପୋର୍ଟଫୋଲିଓ",
+    "contact": "ଯୋଗାଯୋଗ"
   },
   "Theme": {
-    "aria": "Toggle theme",
-    "light": "Light mode",
-    "dark": "Dark mode"
+    "aria": "ଥିମ୍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ",
+    "light": "ଲାଇଟ୍ ମୋଡ୍",
+    "dark": "ଡାର୍କ ମୋଡ୍"
   }
 }
