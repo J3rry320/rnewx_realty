@@ -4,7 +4,9 @@
     "trust": "Trust",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "schedule": "Schedule a Call"
+    "schedule": "Schedule a Call",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "Brand": {
     "name": "Rnewx Realty",
@@ -152,6 +154,12 @@
     "light": "Light mode",
     "dark": "Dark mode"
   },
+  "Language": {
+    "aria": "Switch language",
+    "label": "Language",
+    "en": "EN",
+    "or": "OR"
+  },
   "Auth": {
     "badge": "Secure access",
     "title": "Sign in to your Rnewx dashboard.",
@@ -169,5 +177,191 @@
     "google": "Continue with Google",
     "error": "We couldn't sign you in. Please try again.",
     "note": "By continuing, you agree to our terms and privacy policy."
+  },
+  "Construction": {
+    "hero": {
+      "badge": "New Home Construction",
+      "title": "Build a home with clarity, craftsmanship, and weekly visibility.",
+      "subtitle": "We coordinate design, approvals, and vetted builders so you can focus on the home you want.",
+      "ctaPrimary": "Start a build request",
+      "ctaSecondary": "View sample timeline",
+      "imageAlt1": "New home exterior concept",
+      "imageAlt2": "Modern kitchen and living space",
+      "imageAlt3": "Construction progress and framing"
+    },
+    "stats": {
+      "active": { "label": "Active builds", "value": "28" },
+      "turnaround": { "label": "Average delivery", "value": "7-10 mo" },
+      "satisfaction": { "label": "Client satisfaction", "value": "4.9/5" }
+    },
+    "features": {
+      "eyebrow": "Why build with us",
+      "title": "A structured, transparent build journey",
+      "subtitle": "Every stage is tracked with clear owners, milestones, and documentation.",
+      "design": {
+        "title": "Design alignment",
+        "description": "Collaborate with our design council to align budget, style, and layout."
+      },
+      "partners": {
+        "title": "Vetted partners",
+        "description": "Work with builders who pass licensing, insurance, and performance checks."
+      },
+      "timeline": {
+        "title": "Protected schedules",
+        "description": "Weekly updates and buffers for approvals keep your timeline stable."
+      },
+      "quality": {
+        "title": "Quality gates",
+        "description": "Milestone inspections and punch lists to protect finishes and craftsmanship."
+      }
+    },
+    "process": {
+      "eyebrow": "How it works",
+      "title": "A three-phase path from plot to keys",
+      "subtitle": "We stay accountable from concept to handover with a shared dashboard.",
+      "cta": "Request a build",
+      "stepsTitle": "Steps",
+      "stepLabel": "Step"
+    },
+    "steps": {
+      "discovery": {
+        "title": "Discovery + feasibility",
+        "description": "We map goals, budget, and site constraints before design begins."
+      },
+      "planning": {
+        "title": "Design + approvals",
+        "description": "Plans, material selections, and permits are finalized with your sign-off."
+      },
+      "build": {
+        "title": "Build + delivery",
+        "description": "Weekly progress updates, walkthroughs, and final handoff."
+      }
+    },
+    "cta": {
+      "eyebrow": "Ready to build",
+      "title": "Share your goals and get a tailored build plan.",
+      "subtitle": "We respond with a feasibility summary, timeline estimate, and next steps.",
+      "primary": "Start the request",
+      "secondary": "Talk to a planner",
+      "card": {
+        "eyebrow": "What you receive",
+        "title": "A curated roadmap in 48 hours",
+        "subtitle": "Includes budget guidance, partner recommendations, and next actions."
+      }
+    }
+  },
+  "ConstructionRequest": {
+    "badge": "Build request",
+    "title": "Tell us about your new home.",
+    "subtitle": "Complete this short request and our team will respond with a tailored plan.",
+    "progressAria": "Request progress",
+    "steps": {
+      "contact": { "title": "Contact", "description": "Your details for a quick follow-up." },
+      "plot": { "title": "Plot", "description": "Tell us where you want to build." },
+      "design": { "title": "Design", "description": "Share your home vision." },
+      "timeline": { "title": "Timeline", "description": "Set target dates and budget range." },
+      "review": { "title": "Review", "description": "Confirm everything before submission." }
+    },
+    "stepTitles": {
+      "contact": "Step 1",
+      "plot": "Step 2",
+      "design": "Step 3",
+      "timeline": "Step 4",
+      "review": "Step 5"
+    },
+    "stepHeadings": {
+      "contact": "Let’s start with your contact details",
+      "plot": "Tell us about your plot",
+      "design": "Define the home you want",
+      "timeline": "Set your timeline expectations",
+      "review": "Review your request"
+    },
+    "stepHelper": {
+      "contact": "We’ll use this to schedule a quick consult.",
+      "plot": "If you don’t have a plot, we can help you find one.",
+      "design": "Share style, layout, and budget preferences.",
+      "timeline": "Approximate dates help us plan partners.",
+      "review": "Make sure everything looks right before you submit."
+    },
+    "fields": {
+      "fullName": "Full name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "city": "Preferred city",
+      "plotStatus": "Plot status",
+      "plotSize": "Plot size",
+      "plotCity": "Plot city",
+      "homeStyle": "Preferred style",
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "budget": "Estimated budget",
+      "notes": "Special requirements",
+      "targetStart": "Target start date",
+      "timelineBudget": "Budget range"
+    },
+    "placeholders": {
+      "fullName": "Avery Sutton",
+      "email": "avery@email.com",
+      "phone": "+1 (555) 214-9860",
+      "city": "Austin, TX",
+      "plotSize": "4,500 sq ft",
+      "plotCity": "Neighborhood or suburb",
+      "budget": "$650,000",
+      "notes": "Open kitchen, home office, solar-ready",
+      "timelineBudget": "e.g. $500k - $750k"
+    },
+    "options": {
+      "plotStatus": {
+        "owned": "I already own a plot",
+        "searching": "I need help finding a plot",
+        "listing": "I’m listing my plot"
+      },
+      "homeStyle": {
+        "modern": "Modern",
+        "classic": "Classic",
+        "scandinavian": "Scandinavian",
+        "custom": "Custom / Not sure"
+      }
+    },
+    "review": {
+      "contact": "Contact",
+      "plot": "Plot",
+      "design": "Design",
+      "timeline": "Timeline",
+      "placeholder": "Not provided",
+      "note": "Submitting this request does not commit you to a contract. We’ll follow up with a discovery call.",
+      "bedsBaths": "{beds} beds · {baths} baths"
+    },
+    "actions": {
+      "back": "Back",
+      "next": "Continue",
+      "submit": "Submit request"
+    },
+    "trust": {
+      "title": "Secure by design",
+      "subtitle": "Your details are encrypted and only visible to your dedicated project lead."
+    },
+    "support": {
+      "eyebrow": "Need help?",
+      "title": "Talk to a construction advisor",
+      "subtitle": "We can answer questions about plots, timelines, and partner selection.",
+      "primary": "Schedule a call",
+      "secondary": "Email the team",
+      "imageAlt": "Construction advisor on site"
+    }
+  },
+  "Meta": {
+    "home": {
+      "title": "Rnewx Realty | Buy, Build, Renovate",
+      "description": "Rnewx Realty guides buyers and builders with trusted partners, transparent timelines, and weekly construction updates."
+    },
+    "construction": {
+      "title": "New Home Construction | Rnewx Realty",
+      "description": "Plan and build a custom home with vetted partners, weekly updates, and a protected timeline."
+    },
+    "constructionRequest": {
+      "title": "Start a Build Request | Rnewx Realty",
+      "description": "Share your plot, style, and timeline to receive a tailored construction plan from Rnewx Realty."
+    }
   }
 }

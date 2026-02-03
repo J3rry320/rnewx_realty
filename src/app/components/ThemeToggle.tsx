@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { Moon, Sun } from "lucide-react";
 
 type Theme = "light" | "dark";
 
@@ -37,12 +38,15 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="glass flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold text-brand-accent transition hover:border-brand-gold/70"
+      className="flex items-center gap-2 rounded-full border border-brand-sand/70 bg-brand-surface/70 px-3 py-1.5 text-xs font-semibold text-brand-accent backdrop-blur-xl transition hover:border-brand-gold/70"
       aria-label={t("aria")}
+      aria-pressed={theme === "dark"}
       type="button"
     >
-      <span className="h-2 w-2 rounded-full bg-brand-gold" />
-      {theme === "dark" ? t("light") : t("dark")}
+      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-surface-strong text-brand-gold">
+        {theme === "dark" ? <Sun className="h-3.5 w-3.5" aria-hidden /> : <Moon className="h-3.5 w-3.5" aria-hidden />}
+      </span>
+      <span className="hidden sm:inline">{theme === "dark" ? t("light") : t("dark")}</span>
     </button>
   );
 }

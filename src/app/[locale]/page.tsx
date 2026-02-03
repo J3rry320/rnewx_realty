@@ -1,10 +1,25 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import ThemeToggle from "../components/ThemeToggle";
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+
+  return {
+    title: t("home.title"),
+    description: t("home.description"),
+  };
+}
 
 export default function Home() {
-  const tNav = useTranslations("Nav");
-  const tBrand = useTranslations("Brand");
   const tHero = useTranslations("Hero");
   const tTrust = useTranslations("Trust");
   const tServices = useTranslations("Services");
@@ -12,7 +27,7 @@ export default function Home() {
   const tExperience = useTranslations("Experience");
   const tAssurance = useTranslations("Assurance");
   const tContact = useTranslations("Contact");
-  const tFooter = useTranslations("Footer");
+  const tBrand = useTranslations("Brand");
 
   const bentoHighlights = [
     {
@@ -107,48 +122,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-brand-accent">
+      <Navbar />
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(193,134,100,0.2),_transparent_55%)]" />
         <div className="absolute -right-10 top-24 h-72 w-72 rounded-full bg-brand-sky/70 blur-3xl" />
         <div className="absolute -left-10 bottom-10 h-64 w-64 rounded-full bg-brand-cypress/60 blur-3xl" />
-
-        <div className="sticky top-0 z-50 border-b border-brand-sand/60 bg-brand-surface/70 backdrop-blur-xl">
-          <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-terracotta text-brand-cream font-semibold">
-                R
-              </div>
-              <div>
-                <p className="text-lg font-semibold tracking-wide">
-                  {tBrand("name")}
-                </p>
-                <p className="text-sm text-brand-muted">
-                  {tBrand("tagline")}
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <nav className="hidden items-center gap-6 text-sm font-medium text-brand-muted md:flex">
-                <a className="transition text-brand-accent" href="#services">
-                  {tNav("services")}
-                </a>
-                <a className="transition hover:text-brand-accent" href="#bento">
-                  {tNav("trust")}
-                </a>
-                <a className="transition hover:text-brand-accent" href="#listings">
-                  {tNav("portfolio")}
-                </a>
-                <a className="transition hover:text-brand-accent" href="#contact">
-                  {tNav("contact")}
-                </a>
-              </nav>
-              <ThemeToggle />
-              <button className="rounded-full bg-brand-gold px-5 py-2 text-sm font-semibold text-brand-ink shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-                {tNav("schedule")}
-              </button>
-            </div>
-          </header>
-        </div>
 
         <section className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 gap-12 px-6 pb-20 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-6 animate-fade-up">
@@ -254,7 +232,10 @@ export default function Home() {
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4 animate-stagger">
             {bentoServices.map((service) => (
-              <div key={service.title} className="rounded-3xl glass p-6 shadow-sm">
+              <div
+                key={service.title}
+                className="rounded-3xl glass p-6 shadow-sm"
+              >
                 <h3 className="text-xl font-semibold">{service.title}</h3>
                 <p className="mt-3 text-brand-muted">{service.description}</p>
               </div>
@@ -313,7 +294,7 @@ export default function Home() {
               <div className="grid gap-4">
                 {testimonials.map((testimonial) => (
                   <div key={testimonial.name} className="rounded-3xl glass p-6">
-                    <p className="text-lg">"{testimonial.quote}"</p>
+                    <p className="text-lg">&quot;{testimonial.quote}&quot;</p>
                     <p className="mt-4 text-sm font-semibold">
                       {testimonial.name}
                     </p>
@@ -329,13 +310,17 @@ export default function Home() {
               <p className="text-brand-muted">{tAssurance("subtitle")}</p>
               <div className="grid gap-4">
                 <div className="rounded-2xl glass-strong p-4 text-sm">
-                  <p className="font-semibold">{tAssurance("milestone.title")}</p>
+                  <p className="font-semibold">
+                    {tAssurance("milestone.title")}
+                  </p>
                   <p className="text-brand-muted">
                     {tAssurance("milestone.description")}
                   </p>
                 </div>
                 <div className="rounded-2xl glass-strong p-4 text-sm">
-                  <p className="font-semibold">{tAssurance("schedule.title")}</p>
+                  <p className="font-semibold">
+                    {tAssurance("schedule.title")}
+                  </p>
                   <p className="text-brand-muted">
                     {tAssurance("schedule.description")}
                   </p>
@@ -374,7 +359,9 @@ export default function Home() {
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-gold">
                 {tContact("contactEyebrow")}
               </p>
-              <p className="mt-2 text-lg font-semibold">hello@rnewxrealty.com</p>
+              <p className="mt-2 text-lg font-semibold">
+                hello@rnewxrealty.com
+              </p>
               <p className="text-brand-muted">(555) 214-9860</p>
             </div>
             <div>
@@ -388,25 +375,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-brand-sand bg-background">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 py-10 text-sm text-brand-muted md:flex-row md:items-center md:justify-between">
-          <p>{tFooter("rights")}</p>
-          <div className="flex flex-wrap gap-6">
-            <a className="hover:text-brand-accent" href="#services">
-              {tFooter("services")}
-            </a>
-            <a className="hover:text-brand-accent" href="#bento">
-              {tFooter("trust")}
-            </a>
-            <a className="hover:text-brand-accent" href="#listings">
-              {tFooter("portfolio")}
-            </a>
-            <a className="hover:text-brand-accent" href="#contact">
-              {tFooter("contact")}
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
