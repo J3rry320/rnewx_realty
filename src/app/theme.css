@@ -1,0 +1,47 @@
+:root {
+  --brand-ink: #0f1216;
+  --brand-muted: #7f8792;
+  --brand-sand: #1a1f26;
+  --brand-cream: #0b0f13;
+  --brand-terracotta: #c18664;
+  --brand-cypress: #1f3a3a;
+  --brand-sky: #23313f;
+  --brand-gold: #d1b17a;
+  --brand-surface: #11161c;
+  --brand-surface-strong: #171d24;
+  --brand-accent: #cfd7e3;
+}
+
+@theme inline {
+  --color-background: var(--brand-cream);
+  --color-foreground: var(--brand-accent);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-muted: var(--brand-muted);
+  --color-brand-sand: var(--brand-sand);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-terracotta: var(--brand-terracotta);
+  --color-brand-cypress: var(--brand-cypress);
+  --color-brand-sky: var(--brand-sky);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-surface: var(--brand-surface);
+  --color-brand-surface-strong: var(--brand-surface-strong);
+  --color-brand-accent: var(--brand-accent);
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-playfair);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --brand-ink: #13161b;
+    --brand-muted: #5a6470;
+    --brand-sand: #e2e6ec;
+    --brand-cream: #f6f3ee;
+    --brand-terracotta: #b77658;
+    --brand-cypress: #274242;
+    --brand-sky: #dbe3ea;
+    --brand-gold: #c7a86b;
+    --brand-surface: #ffffff;
+    --brand-surface-strong: #eef1f5;
+    --brand-accent: #1a2129;
+  }
+}
