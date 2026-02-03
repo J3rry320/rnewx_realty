@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
+import { Link } from "@/i18n/navigation";
 
 export async function generateMetadata({
   params,
@@ -138,12 +139,18 @@ export default function Home() {
             </h1>
             <p className="text-lg text-brand-muted">{tHero("subtitle")}</p>
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-full bg-brand-terracotta px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5">
+              <Link
+                href="/construction/request"
+                className="rounded-full bg-brand-terracotta px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5"
+              >
                 {tHero("ctaPrimary")}
-              </button>
-              <button className="rounded-full border border-brand-sand bg-brand-surface px-6 py-3 text-sm font-semibold text-brand-accent transition hover:border-brand-gold/60">
+              </Link>
+              <Link
+                href="/construction"
+                className="rounded-full border border-brand-sand bg-brand-surface px-6 py-3 text-sm font-semibold text-brand-accent transition hover:border-brand-gold/60"
+              >
                 {tHero("ctaSecondary")}
-              </button>
+              </Link>
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 animate-fade-in">
@@ -252,9 +259,12 @@ export default function Home() {
             </p>
             <h2 className="text-3xl font-semibold">{tPortfolio("title")}</h2>
           </div>
-          <button className="rounded-full border border-brand-sand bg-brand-surface px-5 py-2 text-sm font-semibold text-brand-accent">
+          <Link
+            href="/construction"
+            className="rounded-full border border-brand-sand bg-brand-surface px-5 py-2 text-sm font-semibold text-brand-accent"
+          >
             {tPortfolio("cta")}
-          </button>
+          </Link>
         </div>
         <div className="mt-10 grid gap-6 lg:grid-cols-3 animate-stagger">
           {showcaseListings.map((listing) => (
@@ -332,9 +342,12 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <button className="rounded-full bg-brand-terracotta px-6 py-3 text-sm font-semibold text-white">
+              <Link
+                href="/construction/request"
+                className="rounded-full bg-brand-terracotta px-6 py-3 text-sm font-semibold text-white"
+              >
                 {tAssurance("cta")}
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -346,12 +359,18 @@ export default function Home() {
             <h2 className="text-3xl font-semibold">{tContact("title")}</h2>
             <p className="text-brand-muted">{tContact("subtitle")}</p>
             <div className="flex flex-wrap gap-4">
-              <button className="rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-ink">
+              <Link
+                href="/construction/request"
+                className="rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-ink"
+              >
                 {tContact("ctaPrimary")}
-              </button>
-              <button className="rounded-full border border-brand-sand bg-brand-surface-strong px-6 py-3 text-sm font-semibold text-brand-accent">
+              </Link>
+              <Link
+                href="/construction"
+                className="rounded-full border border-brand-sand bg-brand-surface-strong px-6 py-3 text-sm font-semibold text-brand-accent"
+              >
                 {tContact("ctaSecondary")}
-              </button>
+              </Link>
             </div>
           </div>
           <div className="space-y-4 rounded-3xl glass-strong p-6 shadow-sm">
